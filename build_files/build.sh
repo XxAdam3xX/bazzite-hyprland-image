@@ -21,11 +21,10 @@ dnf5 -y install			\
 # install rpm-copr
 #curl -L https://github.com/34N0/rpm-copr/releases/download/v0.9-beta/rpm-copr-v0.9-beta-linux-amd64.tar.gz | sudo tar zx -C /usr/local/bin
 
-dnf5 -y copr enable						\
-	solopasha/hyprland					\
-	erikreider/SwayNotificationCenter	\
-	errornointernet/packages			\
-	tofik/nwg-shell						\
+dnf5 -y copr enable solopasha/hyprland
+dnf5 -y copr enable erikreider/SwayNotificationCenter
+dnf5 -y copr enable errornointernet/packages
+dnf5 -y copr enable tofik/nwg-shell
 
 # install necessary dependencies
 dnf5 -y install 			\
@@ -48,7 +47,7 @@ dnf5 -y install 			\
   unzip						\
   waybar					\
   wlogout					\
-  brightnessctl
+  brightnessctl				\
   cava						\
   loupe						\
   gnome-system-monitor		\
