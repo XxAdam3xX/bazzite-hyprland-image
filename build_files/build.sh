@@ -21,11 +21,11 @@ dnf5 -y install			\
 # install rpm-copr
 #curl -L https://github.com/34N0/rpm-copr/releases/download/v0.9-beta/rpm-copr-v0.9-beta-linux-amd64.tar.gz | sudo tar zx -C /usr/local/bin
 
-dnf5 -y copr enable							\
+dnf5 -y copr enable						\
 	solopasha/hyprland					\
 	erikreider/SwayNotificationCenter	\
 	errornointernet/packages			\
-	tofik/nwg-shell					\
+	tofik/nwg-shell						\
 
 # install necessary dependencies
 dnf5 -y install 			\
@@ -64,7 +64,7 @@ dnf5 -y install 			\
   dunst						\
   mako						\
   rofi						\
-  adobe-source-code-pro-fonts #fonts
+  adobe-source-code-pro-fonts \
   fontawesome-fonts-all		\
   jetbrains-mono-fonts		\
   google-noto-emoji-fonts	\
